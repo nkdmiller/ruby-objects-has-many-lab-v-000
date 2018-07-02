@@ -11,15 +11,15 @@ class Author
   def add_post(post)
     @posts << post
     post.author = self
-    @@all << song
+    @@all << post
   end
   def add_post_by_title(name)
     post = Post.new(name)
     @posts << post
     post.author = self
-    @@all << song
+    @@all << post
   end
-  def post_count
+  def self.post_count
     return @posts.name
   end
 end
