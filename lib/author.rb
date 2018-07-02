@@ -17,6 +17,6 @@ class Author
     post = Post.new(name)
     @post << post
     post.author = self
-    @@all << song 
-  end  
+    @@all << song
+  end
 end
