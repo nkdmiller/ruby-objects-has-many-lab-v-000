@@ -8,4 +8,5 @@ class Song
   end
   def artist_name
     return self.artist.name
+  end
 end
