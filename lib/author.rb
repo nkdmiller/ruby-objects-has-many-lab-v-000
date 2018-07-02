@@ -3,20 +3,23 @@ class Author
   attr_accessor :name
   def initialize(name)
     @name = name
-    @post = []
+    @posts = []
   end
   def posts
     return @posts
   end
   def add_post(post)
-    @post << post
+    @posts << post
     post.author = self
     @@all << song
   end
   def add_post_by_title(name)
     post = Post.new(name)
-    @post << post
+    @posts << post
     post.author = self
     @@all << song
+  end
+  def post_count
+    return @posts.name
   end
 end
