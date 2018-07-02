@@ -20,6 +20,6 @@ class Author
     @@all << post
   end
   def self.post_count
-    return @posts.name
+    return @posts.length
   end
 end
